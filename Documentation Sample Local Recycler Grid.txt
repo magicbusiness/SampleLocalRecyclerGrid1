@@ -1,0 +1,4 @@
+To use local recycler grid
+1. Make file object to store data then implement it in Kotlin file
+2. Next make modal, layout, and adapter will be later implement in kotlin file
+3. In file kotlin make sure layout manager is GridLayoutManager
