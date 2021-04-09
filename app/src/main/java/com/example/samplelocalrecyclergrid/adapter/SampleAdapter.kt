@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.samplelocalrecyclergrid.R
@@ -35,7 +36,10 @@ class SampleAdapter(private val dataSheets: ArrayList<Sheets>): RecyclerView.Ada
             .load(data.image)
             .into(holder.imageSample)
 
-
+        // 
+        holder.itemView.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "You Choose ${data.title}", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int
